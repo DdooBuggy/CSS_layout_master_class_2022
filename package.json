@@ -1,0 +1,26 @@
+{
+  "name": "css_layout_master_class_2022",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "webpack --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DdooBuggy/CSS_layout_master_class_2022.git"
+  },
+  "author": "buggy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DdooBuggy/CSS_layout_master_class_2022/issues"
+  },
+  "homepage": "https://github.com/DdooBuggy/CSS_layout_master_class_2022#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "sass": "^1.49.10",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
