@@ -1,14 +1,14 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const PATH_CLIENT_SCSS = "./src/scss/";
+const PATH_FROM_HORROR = "./src/horror/styles.scss";
+const PATH_TO_HORROR = "horror/styles.css";
 
 module.exports = {
   entry: {
-    main: PATH_CLIENT_SCSS + "styles.scss",
+    main: PATH_FROM_HORROR,
   },
   output: {
     path: path.resolve(__dirname, "assets"),
-    clean: true,
   },
   watch: true,
   watchOptions: {
@@ -16,7 +16,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/styles.css",
+      filename: PATH_TO_HORROR,
     }),
   ],
   module: {
