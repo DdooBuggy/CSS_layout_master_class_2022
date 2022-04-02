@@ -1,0 +1,58 @@
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  width: 100%;
+  height: 75px;
+  padding: 0 140px;
+  background-color: white;
+  .header_home {
+    position: absolute;
+    ul {
+      cursor: pointer;
+      display: grid;
+      grid-template: repeat(3, 15px) / repeat(3, 15px);
+      @extend %headerFont;
+      li {
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+  .header_links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @extend %headerFont;
+    h3 {
+      margin-right: 50px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.3;
+      }
+    }
+    .header_links-left {
+      display: flex;
+      align-items: center;
+    }
+    .header_links-right {
+      display: flex;
+      align-items: center;
+      span {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        i {
+          margin-right: 10px;
+          font-size: 18px;
+        }
+        .header_links2-shoppingCount {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+footer {
+  width: 100%;
+  height: 270px;
+  padding: 65px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $brownDeep;
+  div {
+    width: 33%;
+    text-align: center;
+    @extend %headerFont;
+    border-right: 1px solid rgba($color: #000000, $alpha: 0.8);
+    &:last-child {
+      border: none;
+    }
+    h5 {
+      margin-bottom: 30px;
+      opacity: 0.5;
+    }
+    li {
+      height: 25px;
+    }
+  }
+}

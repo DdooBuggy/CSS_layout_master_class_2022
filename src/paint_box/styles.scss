@@ -1,0 +1,27 @@
+@import "_variables";
+@import "_reset";
+@import "_extends";
+@import "_mixins";
+
+// partials
+@import "./partials/header";
+@import "./partials/halves";
+@import "./partials/productTile";
+@import "./partials/inspiration";
+@import "./partials/footer";
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+main {
+  margin-top: 75px;
+}
+section {
+  padding: 40px 140px;
+  width: 100%;
+  display: flex;
+}

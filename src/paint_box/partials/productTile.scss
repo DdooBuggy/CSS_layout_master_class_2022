@@ -1,0 +1,75 @@
+.productTile {
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 75%; // 가로가 긴 직사각형
+  }
+  .productTile-sudo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .productTile-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 32px;
+      h3 {
+        @extend %headerFont;
+        margin-bottom: 17px;
+      }
+      h2 {
+        @extend %mainFontLarge;
+      }
+    }
+    .productTile-products {
+      display: flex;
+      justify-content: space-between;
+      .productTile-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+        img {
+          cursor: pointer;
+          width: 100%;
+        }
+        .product_catagory {
+          cursor: pointer;
+          @extend %headerFont;
+          margin-bottom: 10px;
+          span {
+            color: #d8a932;
+            margin-left: 10px;
+          }
+        }
+        .product_title {
+          cursor: pointer;
+          @extend %productFont;
+          margin-bottom: 20px;
+        }
+        .product_cost {
+          cursor: pointer;
+          @extend %headerFont;
+          font-size: 13px;
+          opacity: 0.8;
+        }
+        button {
+          cursor: pointer;
+          margin-top: 32px;
+          margin-bottom: 10px;
+          @extend %button;
+          opacity: 0.8;
+        }
+        .soldout {
+          margin-top: 32px;
+          margin-bottom: 10px;
+          @extend %button;
+          opacity: 0.8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

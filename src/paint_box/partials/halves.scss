@@ -1,0 +1,61 @@
+.halves {
+  img {
+    @extend %square;
+    cursor: pointer;
+  }
+  .halves-info {
+    width: 100%;
+    background-color: $brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      @extend %headerFont;
+      margin-bottom: 20px;
+    }
+    .halves-info-text {
+      width: 70%;
+      @extend %mainFontLarge;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 70px;
+      span {
+        font-style: Italic;
+      }
+    }
+    button {
+      @extend %button;
+    }
+    .halves-info-button {
+      display: flex;
+      @extend %button;
+      width: 295px;
+      .studioBtn {
+        width: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid $fontColor;
+      }
+      .arrowBtn {
+        width: 55px;
+        height: 55px;
+        opacity: 0.7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+      }
+    }
+  }
+}
+#halves_discover {
+  background-color: $brown;
+}
+#halves_studio {
+  background-color: $brownDeep;
+}
+#halves_giftCards {
+  background-color: $bluegreen;
+}

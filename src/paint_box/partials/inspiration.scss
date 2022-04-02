@@ -1,0 +1,63 @@
+.inspiration {
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 40%; // 가로가 긴 직사각형
+  }
+  .inspiration-sudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .inspiration-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 70px;
+      width: 100%;
+      h3 {
+        @extend %headerFont;
+        margin-bottom: 27px;
+      }
+      h2 {
+        @extend %mainFontLarge;
+        font-size: 33px;
+        span {
+          font-style: italic;
+        }
+      }
+    }
+    .inspiration-products {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 80px;
+      width: 100%;
+      .inspiration-product {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 13%;
+        border-right: 1px solid rgba($color: #000000, $alpha: 0.5);
+        &:last-child {
+          border-right: none;
+        }
+        img {
+          width: 75%;
+          margin-bottom: 25px;
+        }
+        span {
+          @extend %headerFont;
+          font-size: 13px;
+          opacity: 0.8;
+        }
+      }
+    }
+    button {
+      cursor: pointer;
+      margin-bottom: 10px;
+      @extend %button;
+      opacity: 0.8;
+    }
+  }
+}
