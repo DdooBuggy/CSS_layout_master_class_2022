@@ -1,9 +1,5 @@
 .inspiration {
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: 40%; // 가로가 긴 직사각형
-  }
+  @include square(40%); // 가로가 긴 직사각형
   .inspiration-sudo {
     display: flex;
     flex-direction: column;

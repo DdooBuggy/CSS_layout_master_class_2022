@@ -1,0 +1,7 @@
+@mixin square($percentage) {
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: $percentage;
+  }
+}

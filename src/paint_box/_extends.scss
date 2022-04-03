@@ -4,14 +4,6 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-%square {
-  width: 50%;
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
-}
 %mainFontLarge {
   font-size: 30px;
   font-weight: 400;

@@ -9,6 +9,8 @@
 @import "./partials/productTile";
 @import "./partials/inspiration";
 @import "./partials/footer";
+@import "./partials/journals";
+@import "./partials/instagram";
 
 body {
   font-family: "Playfair Display", serif;
@@ -19,9 +21,13 @@ body {
 }
 main {
   margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 section {
   padding: 40px 140px;
   width: 100%;
   display: flex;
+  max-width: 1920px;
 }

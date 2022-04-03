@@ -1,6 +1,7 @@
 .halves {
   img {
-    @extend %square;
+    width: 50%;
+    @include square(100%);
     cursor: pointer;
   }
   .halves-info {
@@ -25,9 +26,11 @@
       }
     }
     button {
+      cursor: pointer;
       @extend %button;
     }
     .halves-info-button {
+      cursor: pointer;
       display: flex;
       @extend %button;
       width: 295px;

@@ -1,9 +1,5 @@
 .productTile {
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: 75%; // 가로가 긴 직사각형
-  }
+  @include square(75%); // 가로가 긴 직사각형
   .productTile-sudo {
     display: flex;
     flex-direction: column;

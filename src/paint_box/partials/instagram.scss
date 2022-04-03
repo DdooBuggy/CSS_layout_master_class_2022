@@ -1,0 +1,29 @@
+.instagram_tiles {
+  display: flex;
+  flex-direction: column;
+  .instagram_tiles-img {
+    cursor: pointer;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    img {
+      width: 100%;
+      @include square(100%);
+      transition: opacity 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  .instagram_tiles-follow {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    font-size: 35px;
+    font-weight: 400;
+    span {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+}
